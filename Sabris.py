@@ -62,7 +62,7 @@ for link in links:
 stages={}
 for i in result:
     id = i["data"]["id"]
-    stages[id] = i["data"]["stay_in_pipeline_stages"]["times_in_stages"]["1"]
+    stages[id] = i["data"]["stay_in_pipeline_stages"]["times_in_stages"]
 
 
 # In[ ]:
