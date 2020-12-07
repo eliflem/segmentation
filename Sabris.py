@@ -63,6 +63,8 @@ stages={}
 for i in result:
     id = i["data"]["id"]
     stages[id] = i["data"]["stay_in_pipeline_stages"]["times_in_stages"]
+    owner = 'owner'
+    stages[owner] = i["data"]["owner_name"]
 
 
 # In[ ]:
