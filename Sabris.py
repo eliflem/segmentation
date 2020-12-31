@@ -64,7 +64,9 @@ for i in result:
     id = i["data"]["id"]
     stages[id] = i["data"]["stay_in_pipeline_stages"]["times_in_stages"]
     owner = 'owner'
-    stages[owner] = i["data"]["owner_name"]
+    stages[owner] = [i["data"]["owner_name"]]
+    created = 'created time'
+    stages[created] = [i["data"]["add_time"]]
 
 
 # In[ ]:
